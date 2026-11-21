@@ -475,7 +475,7 @@ function math() {
     answer,
     done = false;
   $("#arena").innerHTML =
-    '<h2 id="question" dir="ltr"></h2><form id="answerForm"><input id="answer" type="number" inputmode="numeric" aria-label="إجابتك" required><button>جاوب</button></form>';
+    '<div class="pill" id="clock">60 s</div><h2 id="question" dir="ltr"></h2><form id="answerForm"><input id="answer" type="number" inputmode="numeric" aria-label="إجابتك" required><button>جاوب</button></form>';
   function next() {
     let a = (1 + Math.random() * 20) | 0,
       b = (1 + Math.random() * 20) | 0,
@@ -496,6 +496,7 @@ function math() {
   };
   next();
   timer = setInterval(() => {
+    $("#clock").textContent = Math.max(0, left - 1) + " s";
     if (--left <= 0) {
       clearInterval(timer);
       done = true;
