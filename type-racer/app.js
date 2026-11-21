@@ -22,7 +22,7 @@ function draw() {
     m = metrics(),
     left = Math.max(0, +$("#duration").value - Math.floor(m.seconds));
   $("#stats").innerHTML = [
-    ["Time left", left + "s"],
+    ["Time left", left + " ث"],
     ["WPM", m.wpm],
     ["Accuracy", m.acc + "%"],
   ]

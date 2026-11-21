@@ -1,7 +1,7 @@
 const coverCopy = {
   "paper-trade": ["NOVA", "EXCHANGE", "VIRTUAL MARKETS / REAL CURIOSITY"],
   arcade: ["PLAY", "WITHOUT LIMITS", "FIVE GAMES. ONE PLAYGROUND."],
-  "shop-lane": ["EVERYDAY", "DISCOVERIES", "20,000 REAL PRODUCT RECORDS"],
+  "shop-lane": ["EVERYDAY", "DISCOVERIES", "564 منتجًا منزليًا وتقنيًا"],
   taskly: ["MAKE", "THINGS HAPPEN", "A LITTLE CLARITY FOR YOUR DAY"],
   "weather-now": ["UNDER", "THE SAME SKY", "YOUR WORLD / YOUR WEATHER"],
   "cafe-landing": ["SLOW", "MORNINGS", "EMBER & OAK / COFFEE CULTURE"],
