@@ -7,7 +7,7 @@
 <meta content="Ahmed Tarek's interactive frontend portfolio. Explore thoughtfully built web experiences, tools and games." name="description"/>
 <meta content="#101115" name="theme-color"/>
 <title>معرض اعمالي | أحمد طارق</title>
-<link href="style.css?v=5" rel="stylesheet"/>
+<link href="style.css?v=7" rel="stylesheet"/>
 <meta content="website" property="og:type"/>
 <meta content="معرض اعمالي | ٥٥ مشروع تفاعليًا" property="og:title"/>
 <meta content="A digital playground of finance simulators, games, creative tools and thoughtfully built interfaces." property="og:description"/>
@@ -20,7 +20,7 @@
 <a class="skip" href="#work">انتقل إلى المشاريع</a>
 <header>
 <a class="logo" href="#">أحمد<span>✳</span></a>
-<nav>
+<nav><a id="searchLink" href="#projectSearch">⌕ ابحث عن مشروع</a>
 <a href="#work">المشروعات</a><a href="#about">طريقتي</a><a href="#contact">تواصل معي ↗</a>
 </nav>
 <button aria-controls="settings" aria-expanded="false" aria-label="تخصيص" id="settingsButton">
@@ -109,12 +109,12 @@
 </div>
 <p>مش صور وخلاص. دي مشروعات تقدر تفتحها وتجرّبها. اختار اللي يعجبك وشوف بيشتغل إزاي.</p>
 </div>
-<div class="filterbar">
-<div id="filters"></div>
-<label class="search">⌕
-            <input aria-label="مشاريع البحث" id="search" placeholder="بتدوّر على مشروع إيه؟"/></label>
-</div>
-<div id="projectCount"></div>
+<div class="projectSearch" id="projectSearch">
+<label for="search">ابحث في الـ55 مشروع</label>
+<div class="searchField"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="عايز تجرّب إيه؟" aria-describedby="searchHint" autocomplete="off"><button id="clearSearch" type="button" hidden aria-label="امسح البحث">×</button></div>
+<p id="searchHint">بالاسم أو الفكرة، بالعربي أو الإنجليزي. جرّب: الثعبان، رسم، كود.</p></div>
+<div class="filterbar"><div id="filters"></div></div>
+<div id="projectCount" role="status" aria-live="polite" aria-atomic="true"></div>
 <div class="projects" id="projects"></div>
 <p class="disclaimer">دي مشروعات للعرض والتجربة، مش خدمات تجارية. بياناتك بتفضل في المتصفح إلا لما التطبيق يوضّح إنه بيستخدم خدمة بيانات زي الطقس. مفيش شراء أو حجز أو تحويل فلوس حقيقي.</p>
 </section>
@@ -162,6 +162,6 @@
         font-size: 9px;
         color: var(--muted);
       ">مصادر صور المشروعات وترخيصها ↗</a>
-<script src="portfolio.js?v=6"></script>
+<script src="portfolio.js?v=7"></script>
 <script src="arabic.js?v=1"></script><script src="assistant-widget.js?v=6" defer></script></body>
 </html>
