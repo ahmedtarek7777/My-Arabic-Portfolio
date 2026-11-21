@@ -1,37 +1,129 @@
 const coverCopy = {
-  "paper-trade": ["NOVA", "EXCHANGE", "VIRTUAL MARKETS / REAL CURIOSITY"],
-  arcade: ["PLAY", "WITHOUT LIMITS", "FIVE GAMES. ONE PLAYGROUND."],
-  "shop-lane": ["EVERYDAY", "DISCOVERIES", "564 منتجًا منزليًا وتقنيًا"],
-  taskly: ["MAKE", "THINGS HAPPEN", "A LITTLE CLARITY FOR YOUR DAY"],
-  "weather-now": ["UNDER", "THE SAME SKY", "YOUR WORLD / YOUR WEATHER"],
-  "cafe-landing": ["SLOW", "MORNINGS", "EMBER & OAK / COFFEE CULTURE"],
-  "flow-board": ["IDEAS", "IN MOTION", "FROM WHAT IF TO WHAT'S NEXT"],
-  "budget-lab": ["YOUR MONEY.", "YOUR DIRECTION.", "PLAN WITH PURPOSE"],
-  "invoice-studio": ["GOOD WORK.", "WELL PRESENTED.", "THE FINISHING TOUCH"],
-  "ink-notes": ["ROOM", "FOR THOUGHT", "CAPTURE WHAT COMES NEXT"],
-  "habit-garden": ["SMALL STEPS.", "REAL GROWTH.", "A DAILY PRACTICE"],
-  "focus-room": ["DO LESS.", "FOCUS MORE.", "A SPACE FOR DEEP WORK"],
+  "paper-trade": [
+    "بورصة",
+    "من غير مخاطرة",
+    "جرّب واتعلم / الفلوس هنا للتجربة"
+  ],
+  "arcade": [
+    "خد بريك.",
+    "والعب شوية.",
+    "خمس ألعاب / تحدّى نفسك"
+  ],
+  "shop-lane": [
+    "كل اللي",
+    "يظبّط يومك",
+    "564 منتج منزلي وتقني / تعالى شوف"
+  ],
+  "taskly": [
+    "خلّص اللي وراك",
+    "واحدة واحدة",
+    "يوم أهدى / مهام أوضح"
+  ],
+  "weather-now": [
+    "الجو عندك",
+    "عامل إيه؟",
+    "من مصر لآخر الدنيا / بيانات مباشرة"
+  ],
+  "cafe-landing": [
+    "قعدة رايقة.",
+    "وقهوة مظبوطة.",
+    "افصل شوية / إمبر آند أوك"
+  ],
+  "flow-board": [
+    "عندك فكرة؟",
+    "تعالى نرتّبها.",
+    "من أول فكرة / لحد آخر خطوة"
+  ],
+  "budget-lab": [
+    "فلوسك رايحة",
+    "فين؟",
+    "احسبها صح / وخلّي بالك من مصاريفك"
+  ],
+  "invoice-studio": [
+    "شغلك خلص؟",
+    "دي فاتورته.",
+    "تفاصيل واضحة / وشكل متظبّط"
+  ],
+  "ink-notes": [
+    "فكرة جتلك؟",
+    "اكتبها هنا.",
+    "متسيبش فكرة حلوة تطير"
+  ],
+  "habit-garden": [
+    "حاجة صغيرة.",
+    "كل يوم.",
+    "خطوة ورا خطوة / هتشوف الفرق"
+  ],
+  "focus-room": [
+    "سيب الدوشة.",
+    "وركّز شوية.",
+    "حاجة واحدة دلوقتي / والباقي بعدين"
+  ],
   "calendar-studio": [
-    "MAKE TIME",
-    "FOR WHAT MATTERS",
-    "YOUR DAYS / THOUGHTFULLY ARRANGED",
+    "رتّب يومك.",
+    "وريّح دماغك.",
+    "كل ميعاد / في مكانه"
   ],
-  "split-bills": ["SHARED MOMENTS.", "FAIR SHARES.", "KEEP THE GOOD COMPANY"],
+  "split-bills": [
+    "الحساب واضح.",
+    "واللمة أحلى.",
+    "مين دفع كام؟ / نحسبها سوا"
+  ],
   "client-desk": [
-    "BETTER",
-    "CONNECTIONS",
-    "A LITTLE STRUCTURE GOES A LONG WAY",
+    "كل عميل.",
+    "وكل تفصيلة.",
+    "الشغل أريح / لما يبقى مترتّب"
   ],
-  "stock-room": ["EVERYTHING", "IN ITS PLACE", "KNOW YOUR NEXT MOVE"],
-  "route-book": ["TAKE THE", "SCENIC ROUTE", "MAKE ROOM FOR DISCOVERY"],
-  "meal-studio": ["A BETTER", "KIND OF TABLE", "FRESH IDEAS / EVERY DAY"],
-  "workout-log": ["SHOW UP.", "BUILD ON IT.", "YOUR PROGRESS / YOUR PACE"],
-  "quiz-academy": ["STAY", "CURIOUS", "TEST AN IDEA. LEARN SOMETHING."],
-  "sound-lab": ["MAKE", "SOME NOISE", "YOUR NEXT SOUND STARTS HERE"],
-  "image-studio": ["A NEW", "PERSPECTIVE", "SEE WHAT A LITTLE CHANGE CAN DO"],
-  pathfinder: ["FIND", "YOUR WAY", "EXPLORE THE PATH LESS OBVIOUS"],
-  "type-racer": ["FIND YOUR", "RHYTHM", "ONE KEY AT A TIME"],
-  "data-lens": ["SEE THE", "BIGGER PICTURE", "FROM ROWS TO REVELATIONS"],
+  "stock-room": [
+    "عندك إيه؟",
+    "وناقصك إيه؟",
+    "شوف اللي دخل / واللي طلع"
+  ],
+  "route-book": [
+    "نفسك تروح",
+    "فين المرة دي؟",
+    "خطط للرحلة / وسيب مكان للمفاجآت"
+  ],
+  "meal-studio": [
+    "هناكل إيه",
+    "الأسبوع ده؟",
+    "شوية تخطيط / وأكل على مزاجك"
+  ],
+  "workout-log": [
+    "اتمرّن. سجّل.",
+    "وشوف الفرق.",
+    "على مهلك / المهم تكمّل"
+  ],
+  "quiz-academy": [
+    "فاهمها؟",
+    "تعالى نجرّب.",
+    "اسأل نفسك / واتعلم حاجة جديدة"
+  ],
+  "sound-lab": [
+    "جرّب نغمة.",
+    "واعمل لحنك.",
+    "الإيقاع في إيدك / اسمع وجرّب"
+  ],
+  "image-studio": [
+    "صورتك.",
+    "بمزاجك.",
+    "شوية تعديل / وفرق كبير"
+  ],
+  "pathfinder": [
+    "أنهي طريق",
+    "يوصّل أسرع؟",
+    "حط حواجز / وشوف الحل"
+  ],
+  "type-racer": [
+    "بتكتب بسرعة",
+    "قد إيه؟",
+    "كل حرف بيفرق / جرّب نفسك"
+  ],
+  "data-lens": [
+    "وراء كل رقم",
+    "حكاية.",
+    "خلّي البيانات / توضح الصورة"
+  ]
 };
 let projects = [];
 const $ = (s) => document.querySelector(s),

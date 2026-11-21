@@ -127,7 +127,7 @@ function render() {
   $("#grid").innerHTML = list
     .map(
       (p) =>
-        `<article class="product"><div class="photoBox"><button class="wish ${wish.has(p.id) ? "saved" : ""}" data-wish="${esc(p.id)}" aria-label="${wish.has(p.id) ? "Unsave" : "Save"} ${esc(p.name)}">${wish.has(p.id) ? "♥" : "♡"}</button><button class="detailButton" data-detail="${esc(p.id)}" aria-label="View ${esc(p.name)}">${imageMarkup(p)}</button></div><h3>${esc(p.name)}</h3><div class="brandName">${esc(p.brand || p.cat)}${p.quantity ? " · " + esc(p.quantity) : ""}</div><div class="productBottom"><div><strong>${moneyUSD(p.price)}</strong><small class="demoTag">${state.collection === "grocery" ? "سعر تجريبي مولّد" : "سعر تجريبي"}</small></div><button class="add" data-add="${esc(p.id)}">أضف إلى السلة +</button></div></article>`,
+        `<article class="product"><div class="photoBox"><button class="wish ${wish.has(p.id) ? "saved" : ""}" data-wish="${esc(p.id)}" aria-label="${wish.has(p.id) ? "Unsave" : "Save"} ${esc(p.name)}">${wish.has(p.id) ? "♥" : "♡"}</button><button class="detailButton" data-detail="${esc(p.id)}" aria-label="View ${esc(p.name)}">${imageMarkup(p)}</button></div><h3>${esc(p.name)}</h3><div class="brandName">${esc(p.brand || p.cat)}${p.quantity ? " · " + esc(p.quantity) : ""}</div><div class="productBottom"><div><strong>${moneyUSD(p.price)}</strong><small class="demoTag">${state.collection === "grocery" ? "سعر تجريبي مولّد" : "سعر تجريبي"}</small></div><button class="add" data-add="${esc(p.id)}">ضيف إلى السلة +</button></div></article>`,
     )
     .join("");
   fallbackImages($("#grid"));
@@ -173,7 +173,7 @@ function details(id) {
   let p = find(id);
   if (!p) return;
   let source = sourceLink(p);
-  $("#detailBody").innerHTML = `<div class="detailGrid">${imageMarkup(p)}<div><span class="badge">${esc(p.cat)}</span><h2>${esc(p.name)}</h2><p>${esc(p.brand)}</p><p>رقم الموديل: ${esc(p.code)}</p><div class="price">${moneyUSD(p.price)}</div><p>سعر تجريبي مولّد بالجنيه المصري، وليس عرض بيع حقيقي. لا نؤكد المخزون أو التوافر.</p><button id="detailAdd" class="primary">أضف إلى السلة التجريبية</button>${source ? `<p><a href="${esc(source)}" target="_blank" rel="noopener">مصدر بيانات المنتج والصورة ↗</a></p>` : ''}<p>${p.origin==='fresh'?'بيانات وصور الموديل: موقع فريش الرسمي. العلامة مصرية، ولا يعني ذلك أن كل موديل صُنع في مصر.':'سجل وصورة تعريفيان من DummyJSON. نموذج تقني عالمي، وليس ادعاءً بتوافره لدى متجر مصري.'}</p></div></div>`;
+  $("#detailBody").innerHTML = `<div class="detailGrid">${imageMarkup(p)}<div><span class="badge">${esc(p.cat)}</span><h2>${esc(p.name)}</h2><p>${esc(p.brand)}</p><p>كود الموديل: ${esc(p.code)}</p><div class="price">${moneyUSD(p.price)}</div><p>السعر ده إحنا مولّدينه بالجنيه عشان التجربة، مش عرض بيع حقيقي. مش بنأكد المخزون ولا التوافر.</p><button id="detailAdd" class="primary">ضيف إلى السلة التجريبية</button>${source ? `<p><a href="${esc(source)}" target="_blank" rel="noopener">مصدر بيانات المنتج والصورة ↗</a></p>` : ''}<p>${p.origin==='fresh'?'اسم الموديل وصورته من موقع فريش الرسمي. فريش علامة مصرية، بس ده مش معناه إن كل موديل مصنوع في مصر.':'اسم وصورة من DummyJSON لنموذج تقني عالمي. ده مش معناه إنه متاح دلوقتي في متجر مصري.'}</p></div></div>`;
   fallbackImages($("#detailBody"));
   $("#detailAdd").onclick = () => add(id);
   $("#detail").showModal();

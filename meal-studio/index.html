@@ -1,5 +1,6 @@
-<!doctype html>
-<html dir="rtl" lang="ar">
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar-EG">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -10,21 +11,21 @@
 <header class="appbar">
 <a class="brand" href="./">مخطط الوجبات<span style="color: var(--accent)">.</span></a>
 <div class="actions">
-<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+<a class="button" href="../#work">→ كل المشروعات</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
 </div>
 </header>
 <main class="workspace">
 <div class="titlebar">
 <div>
-<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
-<h1>القليل من التخطيط. طاولة أفضل.</h1>
+<span class="badge">من مشروعات أحمد / جرّب بنفسك</span>
+<h1>هنطبخ إيه الأسبوع ده؟</h1>
 </div>
-<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+<span class="muted">بياناتك على جهازك · من غير حساب</span>
 </div>
 <div class="grid cols2">
 <section class="panel">
 <div class="row">
-<h2>جمع الوصفات</h2>
+<h2>اختار وصفة</h2>
 <input aria-label="وصفات البحث" id="search" placeholder="ابحث عن وصفة"/>
 </div>
 <div class="grid cols2" id="recipes"></div>
@@ -33,12 +34,10 @@
 <aside class="panel">
 <h2>أسبوعك</h2>
 <div id="plan"></div>
-<h2 style="margin-top: 30px">قائمة التسوق</h2>
-<p>
-            تجمع الكميات بين حصص الوصفة القياسية المكونة من حصتين. ضبط لأسرتك.
-          </p>
+<h2 style="margin-top: 30px">قايمة المشتريات</h2>
+<p>قايمة المشتريات محسوبة على حصتين لكل وصفة. زوّد أو قلّل الكميات على قد عددكم.</p>
 <div id="shopping"></div>
-<button id="export">تنزيل قائمة التسوق</button>
+<button id="export">نزّل قايمة المشتريات</button>
 </aside>
 </div>
 </main>

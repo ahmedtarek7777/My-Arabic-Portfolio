@@ -1,5 +1,6 @@
-<!doctype html>
-<html dir="rtl" lang="ar">
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar-EG">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -10,16 +11,16 @@
 <header class="appbar">
 <a class="brand" href="./">غرفة التركيز<span style="color: var(--accent)">.</span></a>
 <div class="actions">
-<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+<a class="button" href="../#work">→ كل المشروعات</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
 </div>
 </header>
 <main class="workspace">
 <div class="titlebar">
 <div>
-<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
-<h1>إفساح المجال للعمل العميق.</h1>
+<span class="badge">من مشروعات أحمد / جرّب بنفسك</span>
+<h1>ركّز في حاجة واحدة. وسيب الباقي شوية.</h1>
 </div>
-<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+<span class="muted">بياناتك على جهازك · من غير حساب</span>
 </div>
 <div class="grid cols2">
 <section class="panel" style="text-align: center; padding: 45px">
@@ -34,7 +35,7 @@
           </div>
 <p id="current">شيء واحد في كل مرة.</p>
 <div class="actions" style="justify-content: center">
-<button class="primary" id="start">ابدأ الجلسة</button><button id="reset">إعادة تعيين</button><button id="skip">المرحلة القادمة</button>
+<button class="primary" id="start">ابدأ الجلسة</button><button id="reset">ابدأ من الأول</button><button id="skip">المرحلة الجاية</button>
 </div>
 <p id="sessionCount"></p>
 </section>
@@ -44,9 +45,9 @@
 <label>دقائق التركيز<input id="focusMin" max="180" min="1" type="number" value="25"/></label><label>استراحة قصيرة<input id="shortMin" max="60" min="1" type="number" value="5"/></label><label>استراحة طويلة<input id="longMin" max="90" min="1" type="number" value="15"/></label>
 </div>
 <p>
-            تنطبق الإعدادات على عملية إعادة الضبط أو المرحلة التالية. يتوقف المؤقت مؤقتًا عند مغادرة الصفحة. لا يتم إرسال أي إخطارات.
+            تنطبق الإعدادات على عملية إعادة الضبط أو المرحلة التالية. يتوقف المؤقت مؤقتًا عند مغادرة الصفحة. مش بيتبعت أي إخطارات.
           </p>
-<h2>قائمة انتظار التركيز</h2>
+<h2>هتركّز في إيه؟</h2>
 <form class="actions" id="add">
 <input aria-label="مهمة التركيز" id="task" placeholder="ما الذي ستركز عليه؟" required=""/><button>إضافة</button>
 </form>
@@ -54,7 +55,7 @@
 </aside>
 </div>
 <section class="panel" style="margin-top: 25px">
-<h2>الجلسات المكتملة</h2>
+<h2>الجلسات اللي خلصتها</h2>
 <div id="log"></div>
 </section>
 </main>

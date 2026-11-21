@@ -1,5 +1,6 @@
-<!doctype html>
-<html dir="rtl" lang="ar">
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar-EG">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -10,35 +11,35 @@
 <header class="appbar">
 <a class="brand" href="./">المخزن<span style="color: var(--accent)">.</span></a>
 <div class="actions">
-<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+<a class="button" href="../#work">→ كل المشروعات</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
 </div>
 </header>
 <main class="workspace">
 <div class="titlebar">
 <div>
-<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
-<h1>اعرف ما هو على الرف الخاص بك.</h1>
+<span class="badge">من مشروعات أحمد / جرّب بنفسك</span>
+<h1>اعرف عندك إيه. وناقصك إيه.</h1>
 </div>
-<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+<span class="muted">بياناتك على جهازك · من غير حساب</span>
 </div>
 <div class="grid cols3" id="stats"></div>
 <div class="grid cols2" style="margin-top: 25px">
 <section class="panel">
 <div class="row">
 <h2>مخزون المنتجات</h2>
-<input aria-label="مخزون البحث" id="search" placeholder="البحث عن المنتجات"/>
+<input aria-label="مخزون البحث" id="search" placeholder="دوّر على المنتجات"/>
 </div>
 <div class="actions">
-<label><input id="low" type="checkbox"/> المخزون المنخفض فقط</label><button id="export">مخزون التصدير</button>
+<label><input id="low" type="checkbox"/> المخزون المنخفض فقط</label><button id="export">نزّل بيانات المخزن</button>
 </div>
 <div id="products"></div>
 </section>
 <aside class="panel">
 <h2>إضافة منتج</h2>
 <form class="stack" id="add">
-<label>اسم المنتج<input id="name" maxlength="100" required=""/></label><label>رمز التخزين التعريفي<input id="sku" maxlength="40" required=""/></label><label>قيمة الوحدة (بالجنيه المصري)<input id="price" min="0" required="" step=".01" type="number" value="0"/></label><label>الكمية الأولية<input id="qty" min="0" required="" step="1" type="number" value="0"/></label><label>عتبة المخزون المنخفض<input id="threshold" min="0" required="" type="number" value="5"/></label><button class="primary">إضافة منتج</button>
+<label>اسم المنتج<input id="name" maxlength="100" required=""/></label><label>كود المنتج<input id="sku" maxlength="40" required=""/></label><label>قيمة الوحدة (بالجنيه المصري)<input id="price" min="0" required="" step=".01" type="number" value="0"/></label><label>الكمية الأولية<input id="qty" min="0" required="" step="1" type="number" value="0"/></label><label>عتبة المخزون المنخفض<input id="threshold" min="0" required="" type="number" value="5"/></label><button class="primary">إضافة منتج</button>
 </form>
-<h2 style="margin-top: 30px">سجل الحركة</h2>
+<h2 style="margin-top: 30px">إيه اللي دخل وطلع؟</h2>
 <div id="log"></div>
 </aside>
 </div>

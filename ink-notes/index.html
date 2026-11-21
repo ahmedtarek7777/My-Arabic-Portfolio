@@ -1,5 +1,6 @@
-<!doctype html>
-<html dir="rtl" lang="ar">
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar-EG">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -10,25 +11,25 @@
 <header class="appbar">
 <a class="brand" href="./">دفتر أفكاري<span style="color: var(--accent)">.</span></a>
 <div class="actions">
-<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+<a class="button" href="../#work">→ كل المشروعات</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
 </div>
 </header>
 <main class="workspace">
 <div class="titlebar">
 <div>
-<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
-<h1>مساحة واضحة لتفكيرك.</h1>
+<span class="badge">من مشروعات أحمد / جرّب بنفسك</span>
+<h1>اكتب اللي في دماغك.</h1>
 </div>
-<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+<span class="muted">بياناتك على جهازك · من غير حساب</span>
 </div>
 <div class="grid" style="grid-template-columns: 260px 1fr">
 <aside class="panel">
-<button class="primary" id="new">+ ملاحظة جديدة</button><input aria-label="ملاحظات البحث" id="search" placeholder="ملاحظات البحث" style="width: 100%; margin-top: 18px"/>
+<button class="primary" id="new">+ نوتة جديدة</button><input aria-label="ملاحظات البحث" id="search" placeholder="ملاحظات البحث" style="width: 100%; margin-top: 18px"/>
 <div id="list"></div>
 </aside>
 <section class="panel">
 <div class="actions">
-<button id="edit">تعديل</button><button id="preview">معاينة تخفيض السعر</button><button id="export">تصدير .md</button><button id="delete">حذف الملاحظة</button>
+<button id="edit">تعديل</button><button id="preview">عاين التنسيق</button><button id="export">نزّل النوتة .md</button><button id="delete">امسح النوتة</button>
 </div>
 <div class="stack" id="editor" style="margin-top: 22px">
 <input aria-label="عنوان الملاحظة" id="title" placeholder="مذكرة بلا عنوان"/><input aria-label="العلامات" id="tags" placeholder="العلامات مفصولة بفواصل"/><textarea aria-label="محتوى الملاحظة" id="content" style="width: 100%; min-height: 420px; line-height: 1.8"></textarea>

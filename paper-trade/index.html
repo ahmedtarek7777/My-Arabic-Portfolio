@@ -1,5 +1,6 @@
-<!doctype html>
-<html dir="rtl" lang="ar">
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar-EG">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -10,20 +11,18 @@
 <header class="appbar">
 <a class="brand" href="./">بورصة نوفا<span style="color: var(--accent)">.</span></a>
 <div class="actions">
-<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+<a class="button" href="../#work">→ كل المشروعات</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
 </div>
 </header>
 <main class="workspace">
 <div class="titlebar">
 <div>
-<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
-<h1>مكان أكثر ذكاءً للممارسة.</h1>
+<span class="badge">من مشروعات أحمد / جرّب بنفسك</span>
+<h1>جرّب البورصة. من غير ما تخاطر بفلوسك.</h1>
 </div>
-<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+<span class="muted">بياناتك على جهازك · من غير حساب</span>
 </div>
-<div class="notice">
-        المحاكاة فقط. يتم إنشاء جميع الأسعار والحركات بيانات تجريبية، وليس عروض أسعار حية. الدولار الظاهري فقط. لا توجد صفقات حقيقية أو ودائع أو مشورة أو اتصال وساطة.
-      </div>
+<div class="notice">بورصة للتجربة بس. الأسعار والحركة هنا محاكاة، مش أسعار السوق الحقيقية. الدولار افتراضي، ومفيش إيداع أو صفقة حقيقية أو ربط بشركة سمسرة. ده مش نصيحة استثمارية.</div>
 <div class="grid cols4" id="metrics"></div>
 <div class="grid cols2" style="margin-top: 22px">
 <section class="panel">
@@ -33,14 +32,14 @@
 <h2 id="chartTitle">أبل / أبل</h2>
 </div>
 <div class="actions">
-<select aria-label="أصل الرسم البياني" id="asset"></select><button id="step">الجلسة القادمة ↗</button>
+<select aria-label="أصل الرسم البياني" id="asset"></select><button id="step">الجولة الجاية ↗</button>
 </div>
 </div>
 <canvas aria-label="محاكاة تاريخ الأسعار" height="300" id="chart" width="900"></canvas>
 <div class="tablewrap" id="markets"></div>
 </section>
 <aside class="panel">
-<h2>إجراء تجارة الورق</h2>
+<h2>جرّب صفقة</h2>
 <form class="stack" id="trade">
 <label>الصك<select id="symbol"></select></label><label>الجانب<select id="side">
 <option value="buy">شراء</option>
@@ -49,28 +48,28 @@
 <div class="row">
 <span class="muted">القيمة المقدرة</span><strong id="estimate"></strong>
 </div>
-<button class="primary">تنفيذ الأمر الظاهري</button>
+<button class="primary">نفّذ الصفقة التجريبية</button>
 </form>
 <p>
             يتم تنفيذ الطلبات على الفور بالسعر المعروض المحاكى. لا الرافعة المالية أو البيع على المكشوف.
           </p>
 <hr style="border: 0; border-top: 1px solid var(--line)"/>
-<h2>ضوابط المخاطر</h2>
+<h2>حدود التجربة</h2>
 <p>
-            قم ببناء مركز وتنويع محفظتك وتتبع أدائك عبر جلسات المحاكاة.
+            ابني مركز وتنويع محفظتك وتتبع أدائك عبر جلسات المحاكاة.
           </p>
-<button id="export">مجلة تجارة التصدير</button><button id="reset" style="margin-top: 10px">
-            إعادة ضبط الحساب الافتراضي
+<button id="export">نزّل سجل الصفقات</button><button id="reset" style="margin-top: 10px">
+            ابدأ الحساب التجريبي من الأول
           </button>
 </aside>
 </div>
 <div class="grid cols2" style="margin-top: 22px">
 <section class="panel">
-<h2>مواقفك</h2>
+<h2>الأسهم اللي معاك</h2>
 <div class="tablewrap" id="positions"></div>
 </section>
 <section class="panel">
-<h2>تاريخ الطلب</h2>
+<h2>الصفقات اللي اتعملت</h2>
 <div class="tablewrap" id="history"></div>
 </section>
 </div>

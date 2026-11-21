@@ -1,5 +1,6 @@
-<!doctype html>
-<html dir="rtl" lang="ar">
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar-EG">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -10,20 +11,18 @@
 <header class="appbar">
 <a class="brand" href="./">قسمة عادلة<span style="color: var(--accent)">.</span></a>
 <div class="actions">
-<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+<a class="button" href="../#work">→ كل المشروعات</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
 </div>
 </header>
 <main class="workspace">
 <div class="titlebar">
 <div>
-<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
-<h1>اللحظات المشتركة. النفقات المتوازنة.</h1>
+<span class="badge">من مشروعات أحمد / جرّب بنفسك</span>
+<h1>الحساب واضح. واللمة أحلى.</h1>
 </div>
-<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+<span class="muted">بياناتك على جهازك · من غير حساب</span>
 </div>
-<div class="notice">
-        حاسبة النفقات المحلية. لا يتم إرسال أي تحويلات أو طلبات دفع أو إشعارات. جميع المبالغ بالجنيه المصري.
-      </div>
+<div class="notice">احسبوا الحساب هنا براحتكم. مفيش تحويلات ولا طلبات دفع ولا إشعارات بتتبعت. كل الأرقام بالجنيه المصري.</div>
 <div class="grid cols3" id="stats"></div>
 <div class="grid cols2" style="margin-top: 25px">
 <section class="panel">
@@ -31,7 +30,7 @@
 <div id="expenses"></div>
 <h2 style="margin-top: 30px">التسويات المقترحة</h2>
 <div id="settlements"></div>
-<button id="export">مجموعة التصدير</button>
+<button id="export">نزّل حساب المجموعة</button>
 </section>
 <aside class="panel">
 <h2>مجموعتك</h2>
@@ -39,11 +38,11 @@
 <input aria-label="اسم الشخص" id="person" maxlength="40" placeholder="اسم الشخص" required=""/><button>إضافة عضو</button>
 </form>
 <div class="actions" id="people" style="margin: 18px 0"></div>
-<h2>سجل نفقة</h2>
+<h2>سجّل مصروف</h2>
 <form class="stack" id="add">
-<label>الوصف<input id="title" maxlength="120" required=""/></label><label>المبلغ (بالجنيه المصري)<input id="amount" max="1000000" min=".01" required="" step=".01" type="number"/></label><label>مدفوع<select id="payer"></select></label><label>انقسم بالتساوي بين</label>
+<label>الوصف<input id="title" maxlength="120" required=""/></label><label>المبلغ بالجنيه<input id="amount" max="1000000" min=".01" required="" step=".01" type="number"/></label><label>مدفوع<select id="payer"></select></label><label>اقسم بالتساوي على</label>
 <div class="stack" id="participants"></div>
-<button class="primary">إضافة النفقات</button>
+<button class="primary">ضيف المصروف</button>
 </form>
 </aside>
 </div>

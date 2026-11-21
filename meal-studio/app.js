@@ -1,99 +1,191 @@
 const recipes = [
   {
-    name: "Lemon pasta",
-    time: 20,
-    tag: "Vegetarian",
-    ingredients: [
-      ["pasta", 200, "g"],
-      ["lemon", 1, ""],
-      ["olive oil", 2, "tbsp"],
-      ["parmesan", 40, "g"],
+    "name": "مكرونة بالليمون",
+    "time": 20,
+    "tag": "نباتي بمنتجات ألبان",
+    "ingredients": [
+      [
+        "مكرونة",
+        200,
+        "جم"
+      ],
+      [
+        "ليمون",
+        1,
+        ""
+      ],
+      [
+        "زيت زيتون",
+        2,
+        "ملعقة كبيرة"
+      ],
+      [
+        "جبنة بارميزان",
+        40,
+        "جم"
+      ]
     ],
-    steps: [
-      "Boil pasta in salted water until al dente.",
-      "Mix lemon juice and olive oil.",
-      "Toss pasta with dressing and cheese.",
-    ],
+    "steps": [
+      "اسلق المكرونة في مية وملح لحد ما تستوي وتفضل متماسكة.",
+      "قلّب عصير الليمون مع زيت الزيتون.",
+      "قلّب المكرونة مع الصوص والجبنة وقدّمها."
+    ]
   },
   {
-    name: "Chickpea bowl",
-    time: 15,
-    tag: "Vegan",
-    ingredients: [
-      ["chickpeas", 240, "g"],
-      ["cucumber", 1, ""],
-      ["tomato", 2, ""],
-      ["olive oil", 2, "tbsp"],
+    "name": "سلطة حمص",
+    "time": 15,
+    "tag": "نباتي بالكامل",
+    "ingredients": [
+      [
+        "حمص مسلوق",
+        240,
+        "جم"
+      ],
+      [
+        "خيار",
+        1,
+        ""
+      ],
+      [
+        "طماطم",
+        2,
+        ""
+      ],
+      [
+        "زيت زيتون",
+        2,
+        "ملعقة كبيرة"
+      ]
     ],
-    steps: [
-      "Rinse cooked chickpeas.",
-      "Dice cucumber and tomato.",
-      "Toss with oil, salt and your preferred seasoning.",
-    ],
+    "steps": [
+      "اغسل الحمص المسلوق وصفّيه.",
+      "قطّع الخيار والطماطم مكعبات.",
+      "قلّب الكل مع الزيت والملح والتوابل اللي بتحبها."
+    ]
   },
   {
-    name: "Tomato eggs",
-    time: 25,
-    tag: "Vegetarian",
-    ingredients: [
-      ["eggs", 4, ""],
-      ["tomato", 4, ""],
-      ["olive oil", 1, "tbsp"],
-      ["onion", 1, ""],
+    "name": "بيض بالطماطم",
+    "time": 25,
+    "tag": "نباتي ببيض",
+    "ingredients": [
+      [
+        "بيض",
+        4,
+        ""
+      ],
+      [
+        "طماطم",
+        4,
+        ""
+      ],
+      [
+        "زيت زيتون",
+        1,
+        "ملعقة كبيرة"
+      ],
+      [
+        "بصلة",
+        1,
+        ""
+      ]
     ],
-    steps: [
-      "Soften chopped onion in oil.",
-      "Add diced tomato and simmer until thick.",
-      "Make wells, add eggs and cook covered until fully set.",
-    ],
+    "steps": [
+      "شوّح البصل في الزيت لحد ما يدبل.",
+      "ضيف الطماطم وسيبها تتسبك شوية.",
+      "اعمل فراغات وحط البيض وغطّي لحد ما يستوي كويس."
+    ]
   },
   {
-    name: "Roasted vegetables",
-    time: 40,
-    tag: "Vegan",
-    ingredients: [
-      ["potato", 400, "g"],
-      ["carrot", 200, "g"],
-      ["olive oil", 2, "tbsp"],
-      ["onion", 1, ""],
+    "name": "خضار في الفرن",
+    "time": 40,
+    "tag": "نباتي بالكامل",
+    "ingredients": [
+      [
+        "بطاطس",
+        400,
+        "جم"
+      ],
+      [
+        "جزر",
+        200,
+        "جم"
+      ],
+      [
+        "زيت زيتون",
+        2,
+        "ملعقة كبيرة"
+      ],
+      [
+        "بصلة",
+        1,
+        ""
+      ]
     ],
-    steps: [
-      "Heat oven to 200°C.",
-      "Chop vegetables evenly and coat with oil.",
-      "Roast for about 30 minutes until tender, turning halfway.",
-    ],
+    "steps": [
+      "سخّن الفرن على ٢٠٠ درجة مئوية.",
+      "قطّع الخضار بحجم متقارب وقلّبه في الزيت.",
+      "دخّله الفرن حوالي نص ساعة لحد ما يطرى، وقلّبه في نص الوقت."
+    ]
   },
   {
-    name: "Oat breakfast",
-    time: 10,
-    tag: "Vegetarian",
-    ingredients: [
-      ["oats", 100, "g"],
-      ["milk", 400, "ml"],
-      ["banana", 1, ""],
+    "name": "شوفان باللبن والموز",
+    "time": 10,
+    "tag": "نباتي بمنتجات ألبان",
+    "ingredients": [
+      [
+        "شوفان",
+        100,
+        "جم"
+      ],
+      [
+        "لبن",
+        400,
+        "مل"
+      ],
+      [
+        "موزة",
+        1,
+        ""
+      ]
     ],
-    steps: [
-      "Combine oats and milk in a pan.",
-      "Simmer gently, stirring until creamy.",
-      "Top with sliced banana.",
-    ],
+    "steps": [
+      "حط الشوفان واللبن في حلة.",
+      "قلّب على نار هادية لحد ما القوام يبقى كريمي.",
+      "قدّمه وحط شرايح الموز على الوش."
+    ]
   },
   {
-    name: "Rice and beans",
-    time: 30,
-    tag: "Vegan",
-    ingredients: [
-      ["rice", 150, "g"],
-      ["cooked beans", 240, "g"],
-      ["tomato", 2, ""],
-      ["onion", 1, ""],
+    "name": "رز وفاصوليا",
+    "time": 30,
+    "tag": "نباتي بالكامل",
+    "ingredients": [
+      [
+        "رز",
+        150,
+        "جم"
+      ],
+      [
+        "فاصوليا مسلوقة",
+        240,
+        "جم"
+      ],
+      [
+        "طماطم",
+        2,
+        ""
+      ],
+      [
+        "بصلة",
+        1,
+        ""
+      ]
     ],
-    steps: [
-      "Cook rice according to package directions.",
-      "Soften chopped onion, then add tomatoes and beans.",
-      "Simmer and serve over rice.",
-    ],
-  },
+    "steps": [
+      "سوّي الرز بالطريقة المكتوبة على العبوة.",
+      "شوّح البصل وضيف عليه الطماطم والفاصوليا.",
+      "سيبهم يتسبكوا شوية وقدّمهم فوق الرز."
+    ]
+  }
 ];
 let plan = load("meal-plan", {}),
   active = 0;

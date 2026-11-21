@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html dir="rtl" lang="ar">
+<html dir="rtl" lang="ar-EG">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -13,7 +13,7 @@
 <header class="shopHeader">
 <a class="brand" href="./">السوق المصري ✳</a>
 <div class="headerLinks">
-<a href="../#work">← المحفظة</a><button aria-label="تبديل سمة اللون" id="theme">◐</button><button id="wishlistButton">♡ <span id="wishCount">0</span></button><button class="primary" id="cartButton">
+<a href="../#work">→ كل المشروعات</a><button aria-label="تبديل سمة اللون" id="theme">◐</button><button id="wishlistButton">♡ <span id="wishCount">0</span></button><button class="primary" id="cartButton">
           السلة <span id="cartCount">0</span>
 </button>
 </div>
@@ -22,9 +22,9 @@
 <section class="shopHero">
 <div>
 <span class="badge">اختيارات مصرية / بلمسة عربية</span>
-<h1>اختيارات لبيتك. وتقنية ليومك.</h1>
-<p>564 منتجًا مختارًا: أجهزة منزلية وشاشات من فريش المصرية، وهواتف وحواسيب عالمية بأسماء عربية.</p>
-<a class="button primary" href="#catalog">اكتشف المجموعة ↓</a>
+<h1>لبيتك وليومك. اختيارات على مزاجك.</h1>
+<p>٥٦٤ منتج قدامك: أجهزة منزلية وشاشات من فريش المصرية، ومعاهم نماذج موبايلات ولابتوبات عالمية. دوّر، فلتر وجرّب السلة براحتك.</p>
+<a class="button primary" href="#catalog">تعالى نشوف المنتجات ↓</a>
 </div>
 <div class="heroProduct">
 <span class="orbitMark">✳</span>
@@ -33,7 +33,7 @@
 </div>
 </div>
 </section>
-<div class="demoNotice">متجر تفاعلي تجريبي، وليس بائعًا حقيقيًا. الأسعار مولّدة للتجربة بالجنيه المصري وليست أسعار فريش أو عروضًا حالية. لا توجد مدفوعات أو طلبات حقيقية، ولا ضمان لتوافر أي منتج. صور ومواصفات فريش من موقع الشركة، والنماذج التقنية العالمية من DummyJSON.</div>
+<div class="demoNotice">خلي بالك: ده متجر للتجربة، مش مكان تشتري منه بجد. الأسعار إحنا مولّدينها بالجنيه المصري عشان نجرّب المتجر، مش أسعار فريش ولا عروض حالية. مفيش طلبات أو دفع حقيقي، والتوافر مش مضمون. صور وبيانات فريش من موقع الشركة، والنماذج التقنية التانية من DummyJSON.</div>
 <section id="catalog">
 <div class="collectionTabs">
 <button class="active" id="groceryCollection">أجهزة منزلية مصرية (543)</button><button id="techCollection">تقنية وشاشات (21)</button>
@@ -41,75 +41,71 @@
 <div class="catalogLayout">
 <aside class="filterPanel">
 <div class="row">
-<h2>قم بتحسين بحثك</h2>
-<button id="resetFilters">إعادة تعيين</button>
+<h2>دوّر على اللي يناسبك</h2>
+<button id="resetFilters">امسح الفلاتر</button>
 </div>
-<label>البحث عن المنتجات<input id="search" placeholder="الاسم أو العلامة التجارية أو الباركود..." type="search"/></label><label>الفئة<select id="category">
+<label>دوّر على المنتجات<input id="search" placeholder="اسم المنتج أو الماركة أو الكود…" type="search"/></label><label>الفئة<select id="category">
 <option value="all">كل الفئات</option>
 </select></label><label>الحد الأقصى للسعر التجريبي <span id="priceLabel">٥٠٬٠٠٠ ج.م.</span><input id="price" max="50000" min="0" step="500" type="range" value="50000"/></label><label>الترتيب حسب<select id="sort">
 <option value="featured">ترتيب الكتالوج</option>
 <option value="name">الاسم من أ إلى ي</option>
-<option value="low">السعر: من الأقل إلى الأعلى</option>
+<option value="low">السعر: من الأقل لفوق</option>
 <option value="high">السعر: من الأعلى إلى الأدنى</option>
 </select></label><label style="display: block"><input id="favoritesOnly" type="checkbox"/> المنتجات المحفوظة فقط</label><label>المنتجات في كل صفحة<select id="pageSize">
 <option value="24">24</option>
 <option value="48">48</option>
 <option value="96">96</option>
 </select></label>
-<div class="sourceBox"><h3>مصادر واضحة.</h3><p>٥٥٦ موديلًا حقيقيًا من كتالوج فريش الرسمي، منها ١٣ شاشة. إضافة إلى ٨ نماذج حواسيب وهواتف عالمية من DummyJSON. هذه ليست قائمة بما هو متاح للشراء الآن.</p><a href="catalog/SOURCES.md">مصادر البيانات والصور ↗</a></div>
+<div class="sourceBox"><h3>مصادر واضحة.</h3><p>عندنا ٥٥٦ موديل حقيقي من كتالوج فريش، منهم ١٣ شاشة، ومعاهم ٨ نماذج موبايلات ولابتوبات من DummyJSON. الأسماء والصور حقيقية، بس ده مش معناه إنها متاحة للشراء دلوقتي.</p><a href="catalog/SOURCES.md">مصادر البيانات والصور ↗</a></div>
 </aside>
 <div>
 <div class="resultsBar">
 <div>
-<h2 id="collectionTitle">رف البقالة العالمي</h2>
-<p id="results" role="status">جاري تحميل الكتالوج المصري…</p>
+<h2 id="collectionTitle">الأجهزة المنزلية المصرية</h2>
+<p id="results" role="status">بنحمّل الكتالوج المصري…</p>
 </div>
 <span class="pill" id="totalBadge">نماذج حقيقية · أسعار تجريبية</span>
 </div>
 <div class="loading" id="loading">
 <span>✳</span>
-<h3>تخزين الرفوف الرقمية.</h3>
-<p>تُحمّل صور الصفحة الظاهرة فقط، وليس الكتالوج بالكامل.</p>
+<h3>بنجهّز الرفوف…</h3>
+<p>بنحمّل صور المنتجات اللي قدامك بس، عشان المتجر يفضل خفيف.</p>
 </div>
 <div class="productGrid" id="grid"></div>
-<div class="empty" hidden="" id="empty">
-              لا توجد منتجات متطابقة. حاول إجراء بحث آخر أو إعادة ضبط عوامل التصفية.
-            </div>
+<div class="empty" hidden="" id="empty">مفيش منتجات بالاختيارات دي. جرّب كلمة تانية أو امسح الفلاتر.</div>
 <div class="pagination" hidden="" id="pagination">
 <button id="prev">← السابق</button><label>الصفحة
                 <input aria-label="رقم الصفحة" id="pageNumber" min="1" type="number" value="1"/>
 <span id="pageTotal"></span></label><button id="next">التالي →</button>
 </div>
-<p class="catalogFoot">أسماء عربية وصور مرتبطة بكل موديل، مع أسعار تجريبية فقط. حقوق العلامات والصور لأصحابها، والمصادر موضحة داخل تفاصيل المنتجات.</p>
+<p class="catalogFoot">كل موديل باسمه وصورته، والأسعار للتجربة بس. حقوق الصور والعلامات لأصحابها، ومصدر كل منتج موجود في تفاصيله.</p>
 </div>
 </div>
 </section>
 </main>
 <dialog id="detail">
-<button aria-label="إغلاق تفاصيل المنتج" class="dialogClose" id="closeDetail">
+<button aria-label="اقفل تفاصيل المنتج" class="dialogClose" id="closeDetail">
         ×
       </button>
 <div id="detailBody"></div>
 </dialog>
 <dialog id="cartDialog">
 <div class="row">
-<h2>حقيبتك</h2>
+<h2>سلتك</h2>
 <button aria-label="أغلق حقيبة التسوق" id="closeCart">×</button>
 </div>
-<p>حقيبة تجريبية. لا توجد منتجات محجوزة.</p>
+<p>دي سلة تجريبية. مفيش منتجات بتتحجز.</p>
 <div id="cartItems"></div>
 <div class="cartTotal row">
 <span>المجموع التجريبي</span><strong id="cartTotal"></strong>
 </div>
-<button class="primary" id="checkout" style="width: 100%">
-        أكمل عملية الدفع التجريبي
-      </button>
+<button class="primary" id="checkout" style="width: 100%">كمّل تجربة الشراء</button>
 <p id="checkoutMessage" role="status"></p>
 </dialog>
 <footer>
 <a class="brand" href="../">السوق المصري ✳</a>
-<p>بنيت للاستكشاف. لم يتم بناؤه لأخذ أموالك.</p>
-<a href="../#work">جميع التجارب الـ 25 ↗</a>
+<p>اتفرّج وجرّب براحتك. مفيش فلوس هتتخصم.</p>
+<a href="../#work">→ كل المشروعات</a>
 </footer>
 <script src="../studio.js?v=4"></script>
 <script src="app.js?v=4"></script>

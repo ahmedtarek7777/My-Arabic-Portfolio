@@ -1,5 +1,6 @@
-<!doctype html>
-<html dir="rtl" lang="ar">
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar-EG">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -10,20 +11,18 @@
 <header class="appbar">
 <a class="brand" href="./">استوديو الفواتير<span style="color: var(--accent)">.</span></a>
 <div class="actions">
-<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+<a class="button" href="../#work">→ كل المشروعات</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
 </div>
 </header>
 <main class="workspace">
 <div class="titlebar">
 <div>
-<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
-<h1>من العمل المنجز إلى العرض الجيد.</h1>
+<span class="badge">من مشروعات أحمد / جرّب بنفسك</span>
+<h1>شغلك خلص؟ طلّع فاتورته.</h1>
 </div>
-<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+<span class="muted">بياناتك على جهازك · من غير حساب</span>
 </div>
-<div class="notice">
-        أداة تصميم الفاتورة. لا يتم إرسال فاتورة عبر البريد الإلكتروني ولا يتم تحصيل أي دفعة. تأكيد المتطلبات الضريبية والقانونية بشكل منفصل.
-      </div>
+<div class="notice">دي أداة تعمل بيها شكل الفاتورة. مفيش إيميل بيتبعت ولا فلوس بتتحصّل. راجع متطلبات الضرائب والقانون عندك قبل ما تستخدم فاتورة فعلية.</div>
 <div class="actions" style="margin-bottom: 20px">
 <button id="save">حفظ المسودة</button><button class="primary" id="print">طباعة/حفظ ملف PDF</button><button id="download">تصدير JSON</button>
 </div>
@@ -41,16 +40,16 @@
 <aside class="panel">
 <h2>تفاصيل الفاتورة</h2>
 <form class="stack" id="details">
-<label>عملك<input id="business" required="" value="استوديو أعمالي"/></label><label>اسم العميل<input id="client" required="" value="عميل تجريبي"/></label><label>رقم الفاتورة<input id="number" required="" value="INV-001"/></label><label>تاريخ الاستحقاق<input id="due" type="date"/></label><label>الضريبة (%)<input id="tax" max="100" min="0" type="number" value="0"/></label><label>الخصم (بالجنيه المصري)<input id="discount" min="0" type="number" value="0"/></label><label>ملاحظات<textarea id="notes">شكرًا لك على عملك.</textarea>
+<label>اسم شغلك<input id="business" required="" value="استوديو أعمالي"/></label><label>اسم العميل<input id="client" required="" value="عميل تجريبي"/></label><label>رقم الفاتورة<input id="number" required="" value="INV-001"/></label><label>تاريخ الاستحقاق<input id="due" type="date"/></label><label>الضريبة (%)<input id="tax" max="100" min="0" type="number" value="0"/></label><label>الخصم (بالجنيه المصري)<input id="discount" min="0" type="number" value="0"/></label><label>ملاحظات<textarea id="notes">شكرًا لك على عملك.</textarea>
 </label>
 </form>
-<h2 style="margin-top: 25px">البنود</h2>
+<h2 style="margin-top: 25px">بنود الفاتورة</h2>
 <form class="stack" id="add">
 <input aria-label="وصف الخدمة" id="description" placeholder="وصف الخدمة" required=""/>
 <div class="actions">
 <input aria-label="الكمية" id="qty" min="1" required="" type="number" value="1"/><input aria-label="سعر الوحدة" id="rate" min="0" placeholder="سعر الوحدة" required="" step=".01" type="number"/>
 </div>
-<button>إضافة عنصر</button>
+<button>ضيف بند</button>
 </form>
 <div id="editLines"></div>
 </aside>

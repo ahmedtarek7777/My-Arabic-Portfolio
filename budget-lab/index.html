@@ -1,5 +1,6 @@
-<!doctype html>
-<html dir="rtl" lang="ar">
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar-EG">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -10,34 +11,32 @@
 <header class="appbar">
 <a class="brand" href="./">مختبر الميزانية<span style="color: var(--accent)">.</span></a>
 <div class="actions">
-<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+<a class="button" href="../#work">→ كل المشروعات</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
 </div>
 </header>
 <main class="workspace">
 <div class="titlebar">
 <div>
-<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
-<h1>أعط كل جنيه اتجاهًا.</h1>
+<span class="badge">من مشروعات أحمد / جرّب بنفسك</span>
+<h1>اعرف فلوسك بتروح فين.</h1>
 </div>
-<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+<span class="muted">بياناتك على جهازك · من غير حساب</span>
 </div>
-<div class="notice">
-        عرض التخطيط اليدوي. غير متصل بالبنك. استخدم بيانات عينة، وليس السجلات المالية الحساسة.
-      </div>
+<div class="notice">سجّل الأرقام بإيدك للتجربة. مفيش ربط بالبنك. استخدم بيانات تجريبية، مش بياناتك المالية الحساسة.</div>
 <div class="grid cols3" id="stats"></div>
 <div class="grid cols2" style="margin-top: 25px">
 <section class="panel">
 <div class="row">
-<h2>التدفق النقدي</h2>
+<h2>الدخل والمصاريف</h2>
 <input aria-label="تصفية الشهر" id="month" type="month"/>
 </div>
 <canvas height="240" id="chart" width="750"></canvas>
 <div class="tablewrap" id="transactions"></div>
 </section>
 <aside class="panel">
-<h2>إضافة معاملة</h2>
+<h2>سجّل حركة فلوس</h2>
 <form class="stack" id="add">
-<label>الوصف<input id="description" maxlength="120" required=""/></label><label>المبلغ (بالجنيه المصري)<input id="amount" max="100000000" min="0.01" required="" step=".01" type="number"/></label><label>النوع<select id="type">
+<label>الوصف<input id="description" maxlength="120" required=""/></label><label>المبلغ بالجنيه<input id="amount" max="100000000" min="0.01" required="" step=".01" type="number"/></label><label>النوع<select id="type">
 <option value="Expense">النفقات</option>
 <option value="Income">الدخل</option>
 </select></label><label>الفئة<select id="category">
@@ -47,13 +46,13 @@
 <option value="Leisure">أوقات الفراغ</option>
 <option value="Salary">الراتب</option>
 <option value="Other">أخرى</option>
-</select></label><label>التاريخ<input id="date" required="" type="date"/></label><button class="primary">حفظ المعاملة</button>
+</select></label><label>التاريخ<input id="date" required="" type="date"/></label><button class="primary">احفظ الحركة</button>
 </form>
 <button id="export" style="margin-top: 20px">تصدير JSON</button>
 </aside>
 </div>
 <section class="panel" style="margin-top: 25px">
-<h2>حدود الفئات الشهرية</h2>
+<h2>ميزانية كل بند في الشهر</h2>
 <div class="grid cols4" id="budgets"></div>
 </section>
 </main>
