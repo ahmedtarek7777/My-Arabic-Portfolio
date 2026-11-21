@@ -16,9 +16,9 @@ let pattern = Array.from({ length: 6 }, (_, r) =>
   playing = false,
   step = 0,
   timer = null;
-function sound(freq) {
+async function sound(freq) {
   ctx ??= new (window.AudioContext || window.webkitAudioContext)();
-  ctx.resume();
+  await ctx.resume();
   let o = ctx.createOscillator(),
     g = ctx.createGain(),
     now = ctx.currentTime,
@@ -62,9 +62,11 @@ function pulse() {
   step = (step + 1) % 16;
   timer = setTimeout(pulse, 60000 / +$("#bpm").value / 4);
 }
-$("#play").onclick = () => {
+$("#play").onclick = async () => {
+  ctx ??= new (window.AudioContext || window.webkitAudioContext)();
+  await ctx.resume();
   playing = !playing;
-  $("#play").textContent = playing ? "Stop" : "Play pattern";
+  $("#play").textContent = playing ? "وقّف الإيقاع" : "شغّل الإيقاع";
   if (playing) {
     step = 0;
     pulse();
