@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>معرض اعمالي | السوق المصري</title>
+<title>السوق المصري | معرض اعمالي</title>
 <meta content="متجر عربي تجريبي لمنتجات منزلية مصرية وتقنية مع بحث وفلاتر وسلة وأسعار تجريبية بالجنيه." name="description"/>
 <link href="../studio.css?v=4" rel="stylesheet"/>
 <link href="style.css?v=5" rel="stylesheet"/>
@@ -23,21 +23,19 @@
 <div>
 <span class="badge">اختيارات مصرية / بلمسة عربية</span>
 <h1>لبيتك وليومك. اختيارات على مزاجك.</h1>
-<p>٥٦٤ منتج قدامك: أجهزة منزلية وشاشات من فريش المصرية، ومعاهم نماذج موبايلات ولابتوبات عالمية. دوّر، فلتر وجرّب السلة براحتك.</p>
+<p>٥٠ ألف سجل منتج حقيقي: سوبر ماركت وتقنية وأجهزة منزلية. فيهم منتجات عربية ومن السوق المصري. الأسماء الأصلية من المصدر، والأسعار للتجربة بس.</p>
 <a class="button primary" href="#catalog">تعالى نشوف المنتجات ↓</a>
 </div>
 <div class="heroProduct">
 <span class="orbitMark">✳</span>
 <div>
-<strong>564</strong><span>منتجًا منزليًا وتقنيًا</span><small>مصادر موضحة لكل منتج</small>
+<strong id="totalCount">50,000</strong><span>منتج في الكتالوج</span><small>مصادر موضحة لكل منتج</small>
 </div>
 </div>
 </section>
-<div class="demoNotice">خلي بالك: ده متجر للتجربة، مش مكان تشتري منه بجد. الأسعار إحنا مولّدينها بالجنيه المصري عشان نجرّب المتجر، مش أسعار فريش ولا عروض حالية. مفيش طلبات أو دفع حقيقي، والتوافر مش مضمون. صور وبيانات فريش من موقع الشركة، والنماذج التقنية التانية من DummyJSON.</div>
+<div class="demoNotice">خلي بالك: ده متجر للتجربة بس. الأسعار مولّدينها بالجنيه المصري، مش عروض بيع حقيقية، ومفيش دفع أو طلبات. سجل عربي أو سوق مصري مش معناه بلد تصنيع مصري. المنتجات العالمية بتفضل بأسمائها الأصلية. المصدر والترخيص موجودين في تفاصيل كل منتج.</div>
 <section id="catalog">
-<div class="collectionTabs">
-<button class="active" id="groceryCollection">أجهزة منزلية مصرية (543)</button><button id="techCollection">تقنية وشاشات (21)</button>
-</div>
+<div class="collectionTabs" id="collectionTabs"></div>
 <div class="catalogLayout">
 <aside class="filterPanel">
 <div class="row">
@@ -46,7 +44,7 @@
 </div>
 <label>دوّر على المنتجات<input id="search" placeholder="اسم المنتج أو الماركة أو الكود…" type="search"/></label><label>الفئة<select id="category">
 <option value="all">كل الفئات</option>
-</select></label><label>الحد الأقصى للسعر التجريبي <span id="priceLabel">٥٠٬٠٠٠ ج.م.</span><input id="price" max="50000" min="0" step="500" type="range" value="50000"/></label><label>الترتيب حسب<select id="sort">
+</select></label><label>الحد الأقصى للسعر التجريبي <span id="priceLabel">1,000,000 EGP</span><input id="price" max="1000000" min="0" step="500" type="range" value="1000000"/></label><label>الترتيب حسب<select id="sort">
 <option value="featured">ترتيب الكتالوج</option>
 <option value="name">الاسم من أ إلى ي</option>
 <option value="low">السعر: من الأقل لفوق</option>
@@ -56,7 +54,7 @@
 <option value="48">48</option>
 <option value="96">96</option>
 </select></label>
-<div class="sourceBox"><h3>مصادر واضحة.</h3><p>عندنا ٥٥٦ موديل حقيقي من كتالوج فريش، منهم ١٣ شاشة، ومعاهم ٨ نماذج موبايلات ولابتوبات من DummyJSON. الأسماء والصور حقيقية، بس ده مش معناه إنها متاحة للشراء دلوقتي.</p><a href="catalog/SOURCES.md">مصادر البيانات والصور ↗</a></div>
+<label><input id="localOnly" type="checkbox"/>سجلات عربية أو من السوق المصري بس</label><div class="sourceBox"><h3>مصادر واضحة.</h3><p>بنحافظ على كود كل منتج ومصدره وصورته. الأسعار والأسواق والتوافر مش بيانات بيع مباشرة. لبعض السجلات أسماء بلغات تانية حسب المصدر.</p><a href="catalog/SOURCES.md">مصادر البيانات والصور ↗</a></div>
 </aside>
 <div>
 <div class="resultsBar">
@@ -64,7 +62,7 @@
 <h2 id="collectionTitle">الأجهزة المنزلية المصرية</h2>
 <p id="results" role="status">بنحمّل الكتالوج المصري…</p>
 </div>
-<span class="pill" id="totalBadge">نماذج حقيقية · أسعار تجريبية</span>
+<span class="pill" id="totalBadge"><span id="catalogTotal">50,000</span> سجل حقيقي · أسعار تجريبية</span>
 </div>
 <div class="loading" id="loading">
 <span>✳</span>
@@ -108,6 +106,6 @@
 <a href="../#work">→ كل المشروعات</a>
 </footer>
 <script src="../studio.js?v=4"></script>
-<script src="app.js?v=4"></script>
-<script src="../arabic.js?v=1"></script></body>
+<script src="app.js?v=7"></script>
+</body>
 </html>

@@ -1,11 +1,12 @@
 from pathlib import Path
 import json
-root=Path(__file__).resolve().parent.parent
-home=json.loads((root/'shop-lane/catalog/egypt-home.json').read_text())
-tech=json.loads((root/'shop-lane/catalog/egypt-tech.json').read_text())
-assert len(home)==543
-assert len(tech)==21
-assert len({p['id'] for p in home+tech})==564
-assert all(p['name'] and p['image'] and p['source'] for p in home+tech)
-assert sum(p['origin']=='fresh' for p in home+tech)==556
-print('564 distinct sourced catalog records, 556 Fresh models and 8 global technology examples.')
+R=Path(__file__).resolve().parent.parent/'shop-lane/catalog'
+m=json.loads((R/'manifest.json').read_text())
+items=[]
+for c in m['collections'].values():
+ a=json.loads((R/Path(c['file']).name).read_text());assert len(a)==c['count'];items+=a
+assert len(items)==50000
+assert len({p['id'] for p in items})==50000
+assert sum(p.get('origin')=='fresh' for p in items)==556
+assert all(p['name'] and p['image'] and p['source'] and p['license'] and p['price']>0 for p in items)
+print('50,000 distinct records; 556 Fresh models retained; source, image, license and demo EGP fields complete.')
