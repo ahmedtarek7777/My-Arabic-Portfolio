@@ -1,0 +1,99 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>معرض اعمالي | استوديو الفواتير</title>
+<link href="../studio.css?v=3" rel="stylesheet"/>
+<link href="../arabic.css?v=1" rel="stylesheet"/></head>
+<body style="--accent: #c8bb91">
+<header class="appbar">
+<a class="brand" href="./">استوديو الفواتير<span style="color: var(--accent)">.</span></a>
+<div class="actions">
+<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+</div>
+</header>
+<main class="workspace">
+<div class="titlebar">
+<div>
+<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
+<h1>من العمل المنجز إلى العرض الجيد.</h1>
+</div>
+<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+</div>
+<div class="notice">
+        أداة تصميم الفاتورة. لا يتم إرسال فاتورة عبر البريد الإلكتروني ولا يتم تحصيل أي دفعة. تأكيد المتطلبات الضريبية والقانونية بشكل منفصل.
+      </div>
+<div class="actions" style="margin-bottom: 20px">
+<button id="save">حفظ المسودة</button><button class="primary" id="print">طباعة/حفظ ملف PDF</button><button id="download">تصدير JSON</button>
+</div>
+<div class="grid cols2">
+<section class="panel" id="invoice">
+<div class="row">
+<h2>الفاتورة</h2>
+<span id="numberPreview"></span>
+</div>
+<div id="clientPreview"></div>
+<div class="tablewrap" id="lines"></div>
+<div id="totals"></div>
+<p id="notePreview"></p>
+</section>
+<aside class="panel">
+<h2>تفاصيل الفاتورة</h2>
+<form class="stack" id="details">
+<label>عملك<input id="business" required="" value="استوديو أعمالي"/></label><label>اسم العميل<input id="client" required="" value="عميل تجريبي"/></label><label>رقم الفاتورة<input id="number" required="" value="INV-001"/></label><label>تاريخ الاستحقاق<input id="due" type="date"/></label><label>الضريبة (%)<input id="tax" max="100" min="0" type="number" value="0"/></label><label>الخصم (بالجنيه المصري)<input id="discount" min="0" type="number" value="0"/></label><label>ملاحظات<textarea id="notes">شكرًا لك على عملك.</textarea>
+</label>
+</form>
+<h2 style="margin-top: 25px">البنود</h2>
+<form class="stack" id="add">
+<input aria-label="وصف الخدمة" id="description" placeholder="وصف الخدمة" required=""/>
+<div class="actions">
+<input aria-label="الكمية" id="qty" min="1" required="" type="number" value="1"/><input aria-label="سعر الوحدة" id="rate" min="0" placeholder="سعر الوحدة" required="" step=".01" type="number"/>
+</div>
+<button>إضافة عنصر</button>
+</form>
+<div id="editLines"></div>
+</aside>
+</div>
+<style>
+        @media print {
+          header,
+          .titlebar,
+          .notice,
+          .actions,
+          aside {
+            display: none !important;
+          }
+          .workspace {
+            padding: 0;
+          }
+          body {
+            background: white;
+            color: black;
+          }
+          #invoice {
+            border: 0;
+            background: white;
+            color: black;
+            min-height: 90vh;
+          }
+          #invoice p {
+            color: #333;
+          }
+          .cols2 {
+            display: block;
+          }
+          #invoice th,
+          #invoice td {
+            border-color: #ddd;
+          }
+          .positive {
+            color: black;
+          }
+        }
+      </style>
+</main>
+<script src="../studio.js?v=3"></script>
+<script src="app.js?v=3"></script>
+<script src="../arabic.js?v=1"></script></body>
+</html>

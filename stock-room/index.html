@@ -1,0 +1,49 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>معرض اعمالي | المخزن</title>
+<link href="../studio.css?v=3" rel="stylesheet"/>
+<link href="../arabic.css?v=1" rel="stylesheet"/></head>
+<body style="--accent: #a6c2a2">
+<header class="appbar">
+<a class="brand" href="./">المخزن<span style="color: var(--accent)">.</span></a>
+<div class="actions">
+<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+</div>
+</header>
+<main class="workspace">
+<div class="titlebar">
+<div>
+<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
+<h1>اعرف ما هو على الرف الخاص بك.</h1>
+</div>
+<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+</div>
+<div class="grid cols3" id="stats"></div>
+<div class="grid cols2" style="margin-top: 25px">
+<section class="panel">
+<div class="row">
+<h2>مخزون المنتجات</h2>
+<input aria-label="مخزون البحث" id="search" placeholder="البحث عن المنتجات"/>
+</div>
+<div class="actions">
+<label><input id="low" type="checkbox"/> المخزون المنخفض فقط</label><button id="export">مخزون التصدير</button>
+</div>
+<div id="products"></div>
+</section>
+<aside class="panel">
+<h2>إضافة منتج</h2>
+<form class="stack" id="add">
+<label>اسم المنتج<input id="name" maxlength="100" required=""/></label><label>رمز التخزين التعريفي<input id="sku" maxlength="40" required=""/></label><label>قيمة الوحدة (بالجنيه المصري)<input id="price" min="0" required="" step=".01" type="number" value="0"/></label><label>الكمية الأولية<input id="qty" min="0" required="" step="1" type="number" value="0"/></label><label>عتبة المخزون المنخفض<input id="threshold" min="0" required="" type="number" value="5"/></label><button class="primary">إضافة منتج</button>
+</form>
+<h2 style="margin-top: 30px">سجل الحركة</h2>
+<div id="log"></div>
+</aside>
+</div>
+</main>
+<script src="../studio.js?v=3"></script>
+<script src="app.js?v=3"></script>
+<script src="../arabic.js?v=1"></script></body>
+</html>

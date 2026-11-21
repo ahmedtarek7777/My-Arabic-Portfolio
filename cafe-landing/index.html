@@ -1,0 +1,128 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>معرض اعمالي | مقهى إمبر آند أوك</title>
+<link href="style.css?v=3" rel="stylesheet"/>
+<link href="../arabic.css?v=1" rel="stylesheet"/></head>
+<body>
+<a href="../#work" style="
+        display: block;
+        text-align: center;
+        background: #14151a;
+        color: #eee;
+        padding: 10px;
+        font: 12px sans-serif;
+      ">→ العودة إلى معرض أعمال أحمد</a>
+<header class="nav">
+<span class="logo">جمرة <i>&amp;</i> البلوط</span>
+<nav>
+<a href="#menu">القائمة</a><a href="#story">القصة</a><a href="#book">حجز طاولة</a>
+</nav>
+</header>
+<p style="text-align: center; font-size: 12px; padding: 10px">
+      مفهوم المقهى الخيالي. نموذج الحجز هو عرض توضيحي محلي فقط. لا يتم إرسال أي حجز.
+    </p>
+<section class="hero">
+<p class="kicker reveal">قهوة متخصصة · معجنات طازجة · منذ 2019</p>
+<h1 class="reveal d1">صباح بطيء،<br/>القهوة الجريئة.</h1>
+<p class="sub reveal d2">
+        مقهى حي يقدم قهوة الإسبريسو ذات الأصل الواحد ومعجنات الحطب وزوايا هادئة.
+      </p>
+<div class="cta reveal d3">
+<a class="btn" href="#book">حجز طاولة</a>
+<a class="ghost" href="#menu">انظر القائمة</a>
+</div>
+<div aria-hidden="true" class="steam reveal d4">☕</div>
+</section>
+<section id="menu">
+<h2 class="reveal">القائمة</h2>
+<div class="menugrid">
+<div class="dish reveal">
+<span class="e">☕</span>
+<h4>إسبرسو</h4>
+<p>جرعة مزدوجة، كريمة بلون العسل.</p>
+<b>45 ج</b>
+</div>
+<div class="dish reveal">
+<span class="e">🥐</span>
+<h4>كرواسون بالزبدة</h4>
+<p>يُرقق طوال الليل ويُخبز عند الفجر.</p>
+<b>60 ج</b>
+</div>
+<div class="dish reveal">
+<span class="e">🍵</span>
+<h4>ماتشا لاتيه</h4>
+<p>الدرجة الاحتفالية، الشوفان أو منتجات الألبان.</p>
+<b>85 ج</b>
+</div>
+<div class="dish reveal">
+<span class="e">🥞</span>
+<h4>فطائر الريكوتا</h4>
+<p>مع شراب التمر والمكسرات المحمصة.</p>
+<b>120 ج</b>
+</div>
+<div class="dish reveal">
+<span class="e">🥤</span>
+<h4>منشط المشروب البارد</h4>
+<p>منقوع الحمضيات لمدة 18 ساعة.</p>
+<b>90 ج</b>
+</div>
+<div class="dish reveal">
+<span class="e">🍰</span>
+<h4>تشيز كيك الباسك</h4>
+<p>القمة المحروقة والمركز المنصهر.</p>
+<b>95 ج</b>
+</div>
+</div>
+</section>
+<section class="story" id="story">
+<h2 class="reveal">قصتنا</h2>
+<p class="reveal">
+        بدأنا بآلة إسبرسو واحدة وفرن مستعار. وبعد مرور ست سنوات، أصبحت منطقة Ember &amp; Oak هي المكان الذي يتباطأ فيه الحي. الفاصوليا المحمصة أسبوعيًا، والخبز من الحطب الخاص بنا، وقائمة التشغيل التي نتجادل بشأنها كل صباح.
+      </p>
+</section>
+<section id="book">
+<h2 class="reveal">حجز طاولة</h2>
+<form class="form reveal" id="bookForm" novalidate="">
+<label>الاسم<input id="name" placeholder="اسمك" required="" type="text"/></label>
+<div class="row">
+<label>التاريخ<input id="date" required="" type="date"/></label>
+<label>الوقت
+            <select id="time" required="">
+<option value="">اختر...</option>
+<option value="9:00 AM">9:00 صباحًا</option>
+<option value="11:00 AM">11:00 صباحًا</option>
+<option value="1:00 PM">الساعة 1:00 ظهرًا</option>
+<option value="4:00 PM">الساعة 4:00 مساءً</option>
+<option value="6:00 PM">الساعة 6:00 مساءً</option>
+<option value="8:00 PM">الساعة 8:00 مساءً</option>
+</select>
+</label>
+<label>الضيوف
+            <select id="guests" required="">
+<option value="">اختر...</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select>
+</label>
+</div>
+<p class="err" hidden="" id="err"></p>
+<button class="btn" type="submit">الاحتياطي</button>
+</form>
+<div class="done" hidden="" id="done">
+<span class="tick">✓</span>
+<h3>نراكم قريبا!</h3>
+<p id="doneText"></p>
+<button class="ghost" id="again">كتاب آخر</button>
+</div>
+</section>
+<footer>© 2026 Ember &amp; Oak Cafe · مفتوح يوميًا من 8 صباحًا إلى 10 مساءً</footer>
+<script src="app.js?v=3"></script>
+<script src="../arabic.js?v=1"></script></body>
+</html>

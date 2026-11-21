@@ -1,0 +1,54 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>معرض اعمالي | سجل التمارين</title>
+<link href="../studio.css?v=3" rel="stylesheet"/>
+<link href="../arabic.css?v=1" rel="stylesheet"/></head>
+<body style="--accent: #d6a094">
+<header class="appbar">
+<a class="brand" href="./">سجل التمارين<span style="color: var(--accent)">.</span></a>
+<div class="actions">
+<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+</div>
+</header>
+<main class="workspace">
+<div class="titlebar">
+<div>
+<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
+<h1>أظهر. قم بتسجيله. البناء عليه.</h1>
+</div>
+<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+</div>
+<div class="notice">
+        عرض توضيحي لتسجيل التمارين، وليس وصفة طبية مخصصة للتمرين. تدرب في حدود قدراتك واطلب التوجيه المؤهل عند الحاجة.
+      </div>
+<div class="grid cols3" id="stats"></div>
+<div class="grid cols2" style="margin-top: 25px">
+<section class="panel">
+<h2>تاريخ التدريب</h2>
+<div id="history"></div>
+<button id="export">تصدير سجل التدريب</button>
+</section>
+<aside class="panel">
+<h2>سجل مجموعة</h2>
+<form class="stack" id="add">
+<label>التاريخ<input id="date" required="" type="date"/></label><label>التمرين<select id="exercise">
+<option value="Squat">القرفصاء</option>
+<option value="Bench press">اضغط على مقاعد البدلاء</option>
+<option value="Deadlift">الرفعة المميتة</option>
+<option value="Overhead press">الصحافة العلوية</option>
+<option value="Row">صف</option>
+<option value="Bodyweight push-up">تمرين الضغط بوزن الجسم</option>
+</select></label><label>الوزن (كجم، 0 لوزن الجسم)<input id="weight" max="1000" min="0" required="" step=".5" type="number" value="20"/></label><label>التكرار<input id="reps" max="500" min="1" required="" step="1" type="number" value="8"/></label><label>مجموعات<input id="sets" max="50" min="1" required="" step="1" type="number" value="3"/></label><button class="primary">حفظ التمرين</button>
+</form>
+<h2 style="margin-top: 30px">السجلات الشخصية</h2>
+<div id="records"></div>
+</aside>
+</div>
+</main>
+<script src="../studio.js?v=3"></script>
+<script src="app.js?v=3"></script>
+<script src="../arabic.js?v=1"></script></body>
+</html>

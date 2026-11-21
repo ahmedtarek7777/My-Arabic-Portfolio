@@ -1,0 +1,51 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>معرض اعمالي | دفتر أفكاري</title>
+<link href="../studio.css?v=3" rel="stylesheet"/>
+<link href="../arabic.css?v=1" rel="stylesheet"/></head>
+<body style="--accent: #c6a1c8">
+<header class="appbar">
+<a class="brand" href="./">دفتر أفكاري<span style="color: var(--accent)">.</span></a>
+<div class="actions">
+<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+</div>
+</header>
+<main class="workspace">
+<div class="titlebar">
+<div>
+<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
+<h1>مساحة واضحة لتفكيرك.</h1>
+</div>
+<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+</div>
+<div class="grid" style="grid-template-columns: 260px 1fr">
+<aside class="panel">
+<button class="primary" id="new">+ ملاحظة جديدة</button><input aria-label="ملاحظات البحث" id="search" placeholder="ملاحظات البحث" style="width: 100%; margin-top: 18px"/>
+<div id="list"></div>
+</aside>
+<section class="panel">
+<div class="actions">
+<button id="edit">تعديل</button><button id="preview">معاينة تخفيض السعر</button><button id="export">تصدير .md</button><button id="delete">حذف الملاحظة</button>
+</div>
+<div class="stack" id="editor" style="margin-top: 22px">
+<input aria-label="عنوان الملاحظة" id="title" placeholder="مذكرة بلا عنوان"/><input aria-label="العلامات" id="tags" placeholder="العلامات مفصولة بفواصل"/><textarea aria-label="محتوى الملاحظة" id="content" style="width: 100%; min-height: 420px; line-height: 1.8"></textarea>
+</div>
+<article hidden="" id="rendered" style="line-height: 1.9; padding: 20px"></article>
+<p id="count"></p>
+</section>
+</div>
+<style>
+        @media (max-width: 750px) {
+          .workspace > .grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      </style>
+</main>
+<script src="../studio.js?v=3"></script>
+<script src="app.js?v=3"></script>
+<script src="../arabic.js?v=1"></script></body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>معرض اعمالي | استوديو الصور</title>
+<link href="../studio.css?v=3" rel="stylesheet"/>
+<link href="../arabic.css?v=1" rel="stylesheet"/></head>
+<body style="--accent: #b1c7d9">
+<header class="appbar">
+<a class="brand" href="./">استوديو الصور<span style="color: var(--accent)">.</span></a>
+<div class="actions">
+<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+</div>
+</header>
+<main class="workspace">
+<div class="titlebar">
+<div>
+<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
+<h1>منظور جديد لكل صورة.</h1>
+</div>
+<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+</div>
+<div class="notice">
+        تبقى صورك على هذا الجهاز. لم يتم تحميل أي شيء. يحافظ تصدير PNG على الصورة التي تم تحريرها، وليس بياناتها الوصفية الأصلية.
+      </div>
+<div class="grid cols2">
+<section class="panel">
+<div class="actions">
+<label class="button primary">افتح الصورة<input accept="image/png,image/jpeg,image/webp" hidden="" id="file" type="file"/></label><button id="sample">استخدم عينة من المنتج</button><button id="download">تصدير PNG</button>
+</div>
+<div style="
+              margin-top: 25px;
+              min-height: 400px;
+              display: grid;
+              place-items: center;
+              background: repeating-conic-gradient(
+                  #22242c 0% 25%,
+                  #292b33 0% 50%
+                )
+                50%/20px 20px;
+              border-radius: 10px;
+              overflow: hidden;
+            ">
+<canvas height="600" id="canvas" style="max-height: 600px; object-fit: contain" width="800"></canvas>
+</div>
+<p id="info"></p>
+</section>
+<aside class="panel">
+<h2>طور صورتك</h2>
+<div class="stack">
+<label>السطوع <output id="brightOut">100%</output><input id="brightness" max="200" min="0" type="range" value="100"/></label><label>التباين<input id="contrast" max="200" min="0" type="range" value="100"/></label><label>التشبع<input id="saturation" max="200" min="0" type="range" value="100"/></label><label>تدرج الرمادي<input id="gray" max="100" min="0" type="range" value="0"/></label><label>طمس<input id="blur" max="10" min="0" step=".5" type="range" value="0"/></label><label>Output width (px)<input id="width" max="4096" min="50" type="number" value="800"/></label>
+<div class="actions">
+<button id="rotate">تدوير 90 درجة</button><button id="flip">اقلب أفقيًا</button>
+</div>
+<button id="reset">إعادة ضبط التعديلات</button>
+</div>
+<p>
+            يحافظ الإخراج على نسبة العرض إلى الارتفاع. تقتصر الصور الكبيرة على حد أقصى يبلغ 4096 بكسل لأداء المتصفح.
+          </p>
+</aside>
+</div>
+</main>
+<script src="../studio.js?v=3"></script>
+<script src="app.js?v=3"></script>
+<script src="../arabic.js?v=1"></script></body>
+</html>

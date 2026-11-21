@@ -1,0 +1,48 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>معرض اعمالي | إدارة العملاء</title>
+<link href="../studio.css?v=3" rel="stylesheet"/>
+<link href="../arabic.css?v=1" rel="stylesheet"/></head>
+<body style="--accent: #c8aad8">
+<header class="appbar">
+<a class="brand" href="./">إدارة العملاء<span style="color: var(--accent)">.</span></a>
+<div class="actions">
+<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+</div>
+</header>
+<main class="workspace">
+<div class="titlebar">
+<div>
+<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
+<h1>هيكل صغير. علاقات أفضل.</h1>
+</div>
+<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+</div>
+<div class="notice">
+        عرض تجريبي لإدارة علاقات العملاء (CRM) محلي خيالي. لا يتم إرسال أي شيء إلى جهات الاتصال. تجنب تخزين بيانات العملاء الحساسة.
+      </div>
+<div class="grid cols3" id="stats"></div>
+<div class="grid cols2" style="margin-top: 25px">
+<section class="panel">
+<div class="row">
+<h2>خط الأنابيب الخاص بك</h2>
+<input aria-label="البحث في جهات الاتصال" id="search" placeholder="البحث في جهات الاتصال"/>
+</div>
+<div id="contacts"></div>
+</section>
+<aside class="panel">
+<h2>إضافة جهة اتصال</h2>
+<form class="stack" id="add">
+<label>الاسم<input id="name" maxlength="80" required=""/></label><label>الشركة<input id="company" maxlength="80"/></label><label>البريد الإلكتروني<input id="email" type="email"/></label><label>قيمة الصفقة (بالجنيه المصري)<input id="value" max="100000000" min="0" step=".01" type="number" value="0"/></label><label>ملاحظات<textarea id="notes"></textarea></label><button class="primary">حفظ جهة الاتصال</button>
+</form>
+<button id="export" style="margin-top: 20px">تصدير جهات الاتصال</button>
+</aside>
+</div>
+</main>
+<script src="../studio.js?v=3"></script>
+<script src="app.js?v=3"></script>
+<script src="../arabic.js?v=1"></script></body>
+</html>

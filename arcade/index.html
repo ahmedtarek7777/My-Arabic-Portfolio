@@ -1,0 +1,54 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>معرض اعمالي | ساحة الألعاب</title>
+<link href="../studio.css?v=3" rel="stylesheet"/>
+<link href="../arabic.css?v=1" rel="stylesheet"/></head>
+<body style="--accent: #e6bd74">
+<header class="appbar">
+<a class="brand" href="./">ساحة الألعاب<span style="color: var(--accent)">.</span></a>
+<div class="actions">
+<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+</div>
+</header>
+<main class="workspace">
+<div class="titlebar">
+<div>
+<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
+<h1>الألعاب الصغيرة. طاقة كبيرة.</h1>
+</div>
+<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+</div>
+<div class="row" style="margin-bottom: 25px">
+<p>خمس مباريات قابلة للعب. أفضل الدرجات الخاصة بك تبقى على هذا الجهاز.</p>
+<span class="pill">لا يوجد تنزيلات. مجرد لعب.</span>
+</div>
+<div class="tabs" id="gameTabs"></div>
+<div class="grid cols2">
+<section class="panel">
+<div class="row">
+<h2 id="gameName"></h2>
+<button id="restart">لعبة جديدة ↻</button>
+</div>
+<p id="rules"></p>
+<div id="arena" style="min-height: 340px; display: grid; place-items: center"></div>
+<p id="status" role="status"></p>
+</section>
+<aside class="panel">
+<h2>أفضل النتائج الشخصية</h2>
+<div id="scores"></div>
+<h2 style="margin-top: 30px">مصممة لقضاء عطلة سريعة.</h2>
+<p>
+            الذاكرة وردود الفعل والاستراتيجية والكلمات والأرقام. العب باستخدام الماوس أو اللمس أو لوحة المفاتيح، حسب اللعبة.
+          </p>
+<p>جميع النتائج محلية. لا توجد لوحة متصدرين عبر الإنترنت أو حسابات لاعبين.</p>
+<a class="button" href="../paper-trade/">جرب NOVA Exchange ↗</a>
+</aside>
+</div>
+</main>
+<script src="../studio.js?v=3"></script>
+<script src="app.js?v=3"></script>
+<script src="../arabic.js?v=1"></script></body>
+</html>

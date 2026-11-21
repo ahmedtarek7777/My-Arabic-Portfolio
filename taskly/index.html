@@ -1,0 +1,49 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>معرض اعمالي | مهامي</title>
+<link href="style.css?v=3" rel="stylesheet"/>
+<link href="../arabic.css?v=1" rel="stylesheet"/></head>
+<body>
+<a href="../#work" style="
+        display: block;
+        text-align: center;
+        background: #14151a;
+        color: #eee;
+        padding: 10px;
+        font: 12px sans-serif;
+      ">→ العودة إلى معرض أعمال أحمد</a>
+<header class="bar">
+<h1>مهامي<span>.</span></h1>
+<button aria-label="تبديل الوضع المظلم" class="theme" id="theme">🌙</button>
+</header>
+<main class="app">
+<form class="add" id="addForm">
+<input autocomplete="off" id="newTask" maxlength="140" placeholder="أضف مهمة واضغط على Enter" type="text"/>
+<select aria-label="العلامة" id="newTag">
+<option value="personal">شخصية</option>
+<option value="work">العمل</option>
+<option value="urgent">عاجل</option>
+</select>
+<button type="submit">إضافة</button>
+</form>
+<div class="stats">
+<span id="leftCount">بقي 0</span>
+<div class="filters">
+<button class="active" data-f="all">الكل</button>
+<button data-f="active">نشط</button>
+<button data-f="done">تم</button>
+</div>
+<button class="clear" id="clearDone">تم الحذف</button>
+</div>
+<ul class="list" id="list"></ul>
+<p class="empty" id="empty">لا توجد مهام هنا. استمتع بالهدوء. 🌿</p>
+<p class="hint">
+        اسحب المهام لإعادة ترتيبها. يتم حفظ كل شيء في المتصفح الخاص بك.
+      </p>
+</main>
+<script src="app.js?v=3"></script>
+<script src="../arabic.js?v=1"></script></body>
+</html>

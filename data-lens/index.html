@@ -1,0 +1,49 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>معرض اعمالي | عدسة البيانات</title>
+<link href="../studio.css?v=3" rel="stylesheet"/>
+<link href="../arabic.css?v=1" rel="stylesheet"/></head>
+<body style="--accent: #94b9c3">
+<header class="appbar">
+<a class="brand" href="./">عدسة البيانات<span style="color: var(--accent)">.</span></a>
+<div class="actions">
+<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+</div>
+</header>
+<main class="workspace">
+<div class="titlebar">
+<div>
+<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
+<h1>تحويل الصفوف إلى صورة أوضح.</h1>
+</div>
+<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+</div>
+<div class="notice">
+        تتم معالجة البيانات محليًا. لا يوجد تحميل على الخادم. استخدم ملفات CSV التي يقل حجمها عن 2 ميجابايت. تدعم الخلايا الرقمية الأرقام العشرية بدون رموز العملة.
+      </div>
+<div class="actions" style="margin-bottom: 25px">
+<label class="button primary">افتح ملف CSV<input accept=".csv,text/csv" hidden="" id="file" type="file"/></label><button id="sample">تحميل عينة المبيعات</button><button id="export">تصدير ملف CSV الذي تمت تصفيته</button><input aria-label="تصفية البيانات" id="search" placeholder="تصفية الصفوف..."/>
+</div>
+<div class="grid cols3" id="stats"></div>
+<div class="grid cols2" style="margin-top: 25px">
+<section class="panel">
+<h2>استكشاف البيانات</h2>
+<div class="tablewrap" id="table" style="max-height: 560px; overflow: auto"></div>
+</section>
+<aside class="panel">
+<h2>تصور</h2>
+<div class="stack">
+<label>المجموعة حسب<select id="group"></select></label><label>القياس الرقمي<select id="measure"></select></label>
+</div>
+<canvas height="380" id="chart" style="margin-top: 25px" width="600"></canvas>
+<p id="summary"></p>
+</aside>
+</div>
+</main>
+<script src="../studio.js?v=3"></script>
+<script src="app.js?v=3"></script>
+<script src="../arabic.js?v=1"></script></body>
+</html>

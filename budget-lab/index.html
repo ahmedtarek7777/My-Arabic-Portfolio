@@ -1,0 +1,63 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>معرض اعمالي | مختبر الميزانية</title>
+<link href="../studio.css?v=3" rel="stylesheet"/>
+<link href="../arabic.css?v=1" rel="stylesheet"/></head>
+<body style="--accent: #95c9ac">
+<header class="appbar">
+<a class="brand" href="./">مختبر الميزانية<span style="color: var(--accent)">.</span></a>
+<div class="actions">
+<a class="button" href="../#work">← جميع المشاريع</a><button aria-label="تبديل سمة اللون" id="theme">◐</button>
+</div>
+</header>
+<main class="workspace">
+<div class="titlebar">
+<div>
+<span class="badge">ستوديو أحمد / عرض تفاعلي</span>
+<h1>أعط كل جنيه اتجاهًا.</h1>
+</div>
+<span class="muted">محلي أولاً · لا يلزم وجود حساب</span>
+</div>
+<div class="notice">
+        عرض التخطيط اليدوي. غير متصل بالبنك. استخدم بيانات عينة، وليس السجلات المالية الحساسة.
+      </div>
+<div class="grid cols3" id="stats"></div>
+<div class="grid cols2" style="margin-top: 25px">
+<section class="panel">
+<div class="row">
+<h2>التدفق النقدي</h2>
+<input aria-label="تصفية الشهر" id="month" type="month"/>
+</div>
+<canvas height="240" id="chart" width="750"></canvas>
+<div class="tablewrap" id="transactions"></div>
+</section>
+<aside class="panel">
+<h2>إضافة معاملة</h2>
+<form class="stack" id="add">
+<label>الوصف<input id="description" maxlength="120" required=""/></label><label>المبلغ (بالجنيه المصري)<input id="amount" max="100000000" min="0.01" required="" step=".01" type="number"/></label><label>النوع<select id="type">
+<option value="Expense">النفقات</option>
+<option value="Income">الدخل</option>
+</select></label><label>الفئة<select id="category">
+<option value="Food">الغذاء</option>
+<option value="Transport">النقل</option>
+<option value="Housing">السكن</option>
+<option value="Leisure">أوقات الفراغ</option>
+<option value="Salary">الراتب</option>
+<option value="Other">أخرى</option>
+</select></label><label>التاريخ<input id="date" required="" type="date"/></label><button class="primary">حفظ المعاملة</button>
+</form>
+<button id="export" style="margin-top: 20px">تصدير JSON</button>
+</aside>
+</div>
+<section class="panel" style="margin-top: 25px">
+<h2>حدود الفئات الشهرية</h2>
+<div class="grid cols4" id="budgets"></div>
+</section>
+</main>
+<script src="../studio.js?v=3"></script>
+<script src="app.js?v=3"></script>
+<script src="../arabic.js?v=1"></script></body>
+</html>
