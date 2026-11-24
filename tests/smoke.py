@@ -17,11 +17,11 @@ def main():
             errors=[];page.on('pageerror',lambda error: errors.append(str(error)))
             base='http://127.0.0.1:8765/'
             page.goto(base);page.wait_for_selector('.project')
-            assert page.locator('.project').count()==55
+            assert page.locator('.project').count()==120
             assert page.locator('html').get_attribute('dir')=='rtl'
             assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
             page.locator('#filters button').nth(1).click()
-            assert 0<page.locator('.project').count()<55
+            assert 0<page.locator('.project').count()<120
             page.goto(base+'shop-lane/');page.wait_for_selector('.product')
             assert page.locator('.product').count()==24
             page.locator('[data-add]').first.click();page.locator('#cartButton').click()
